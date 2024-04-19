@@ -1,0 +1,107 @@
+html {
+    box-sizing: border-box;
+    font-size: 10px;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+body {
+    background-color: #080808;
+    color: #ffffff;
+    font-size: 16px;
+    font-family: Poppins, serif;
+}
+.container {
+    width: 100%;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+/*
+=== Components
+*/
+.btrr {
+    border-top-right-radius: 1rem;
+}
+.btlr {
+    border-top-left-radius: 1rem;
+}
+.bblr {
+    border-bottom-left-radius: 1rem;
+}
+.bbrr {
+    border-bottom-right-radius: 1rem;
+}
+
+/*
+=== App Style
+*/
+.periodic-table__e-1 {
+    margin-bottom: 5rem;
+}
+.periodic-table__e-2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.periodic-table__row {
+    display: flex;
+}
+.periodic-table__row--1 {
+    justify-content: space-between;
+}
+.periodic-table__row--2 {
+    justify-content: space-between;
+}
+.periodic-table__row--3 {
+    justify-content: space-between;
+}
+.periodic-table__row--4 {
+
+}
+.periodic-table__row-wrapper {
+    display: flex;
+}
+
+.element {
+    width: 8.3rem;
+    height: 8.3rem;
+    padding: 4rem 1rem;
+    background-color: #ffffff;
+    color: #080808;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid black;
+    flex-grow: 1;
+    cursor: pointer;
+    transition: all 100ms ease-in;
+}
+.element:hover {
+    background-color: deepskyblue;
+    color: #ffffff;
+    border-color: deepskyblue;
+}
+.element--row-1 {
+    flex-grow: 0;
+}
+.periodic-table__e-2 .element {
+    flex-grow: 0;
+}
+.element__number {
+    display: block;
+    align-self: flex-start;
+    font-size: 1.6rem;
+    font-family: "Poppins Black";
+}
+.element__icon {
+    font-size: 2rem;
+    font-family: "Poppins Black";
+}
+.element__name {
+    font-family: "Shabnam Medium";
+}
